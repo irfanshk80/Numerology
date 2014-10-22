@@ -1,0 +1,830 @@
+2014/10/22 22:29:49 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Kolkata' for '5.5/no DST' instead (E:\phpws\numerology\protected\views\layouts\main.php:51)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 E:\phpws\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 E:\phpws\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 E:\phpws\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 E:\phpws\numerology\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 E:\phpws\yii\framework\web\CBaseController.php(126): require()
+#8 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 E:\phpws\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 E:\phpws\numerology\protected\controllers\SiteController.php(32): SiteController->render()
+#11 E:\phpws\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 E:\phpws\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php
+in E:\phpws\numerology\protected\views\layouts\main.php (51)
+in E:\phpws\numerology\protected\views\layouts\column1.php (6)
+in E:\phpws\numerology\protected\controllers\SiteController.php (32)
+2014/10/22 22:40:17 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Kolkata' for '5.5/no DST' instead (E:\phpws\numerology\protected\views\layouts\main.php:51)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 E:\phpws\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 E:\phpws\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 E:\phpws\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 E:\phpws\numerology\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 E:\phpws\yii\framework\web\CBaseController.php(126): require()
+#8 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 E:\phpws\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 E:\phpws\numerology\protected\controllers\SiteController.php(32): SiteController->render()
+#11 E:\phpws\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 E:\phpws\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php
+in E:\phpws\numerology\protected\views\layouts\main.php (51)
+in E:\phpws\numerology\protected\views\layouts\column1.php (6)
+in E:\phpws\numerology\protected\controllers\SiteController.php (32)
+2014/10/22 22:41:10 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Kolkata' for '5.5/no DST' instead (E:\phpws\numerology\protected\views\layouts\main.php:51)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 E:\phpws\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 E:\phpws\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 E:\phpws\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 E:\phpws\numerology\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 E:\phpws\yii\framework\web\CBaseController.php(126): require()
+#8 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 E:\phpws\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 E:\phpws\numerology\protected\controllers\SiteController.php(32): SiteController->render()
+#11 E:\phpws\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 E:\phpws\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php
+in E:\phpws\numerology\protected\views\layouts\main.php (51)
+in E:\phpws\numerology\protected\views\layouts\column1.php (6)
+in E:\phpws\numerology\protected\controllers\SiteController.php (32)
+2014/10/22 22:41:35 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Kolkata' for '5.5/no DST' instead (E:\phpws\numerology\protected\views\layouts\main.php:51)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 E:\phpws\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 E:\phpws\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 E:\phpws\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 E:\phpws\numerology\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 E:\phpws\yii\framework\web\CBaseController.php(126): require()
+#8 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 E:\phpws\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 E:\phpws\numerology\protected\controllers\SiteController.php(32): SiteController->render()
+#11 E:\phpws\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 E:\phpws\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php
+in E:\phpws\numerology\protected\views\layouts\main.php (51)
+in E:\phpws\numerology\protected\views\layouts\column1.php (6)
+in E:\phpws\numerology\protected\controllers\SiteController.php (32)
+2014/10/22 22:42:13 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Kolkata' for '5.5/no DST' instead (E:\phpws\numerology\protected\views\layouts\main.php:51)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 E:\phpws\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 E:\phpws\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 E:\phpws\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 E:\phpws\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 E:\phpws\numerology\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 E:\phpws\yii\framework\web\CBaseController.php(126): require()
+#8 E:\phpws\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 E:\phpws\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 E:\phpws\numerology\protected\controllers\SiteController.php(32): SiteController->render()
+#11 E:\phpws\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 E:\phpws\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php
+in E:\phpws\numerology\protected\views\layouts\main.php (51)
+in E:\phpws\numerology\protected\views\layouts\column1.php (6)
+in E:\phpws\numerology\protected\controllers\SiteController.php (32)
+2014/10/22 22:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/index.php".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/index.php')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php/Comms/index.php
+---
+2014/10/22 22:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/index.php".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/index.php')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php/Comms/index.php
+---
+2014/10/22 22:52:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/index.php".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/index.php')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php/Comms/index.php
+---
+2014/10/22 22:52:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/appOpen.php".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen.p...')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php/Comms/appOpen.php
+---
+2014/10/22 22:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "appOpen.php".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('appOpen.php')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('appOpen.php')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen.p...')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php/Comms/appOpen.php
+---
+2014/10/22 23:09:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "appopen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('appopen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=appopen
+---
+2014/10/22 23:09:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "appOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('appOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=appOpen
+---
+2014/10/22 23:09:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "appOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('appOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=appOpen
+---
+2014/10/22 23:10:12 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "lopen".' in E:\phpws\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\phpws\numerology\protected\controllers\CommsController.php(30): CComponent->__call('lopen', Array)
+#1 E:\phpws\numerology\protected\controllers\CommsController.php(30): CWebApplication->lopen()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(354): require('E:\phpws\numero...')
+#3 E:\phpws\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('Comms/appOpen')
+#4 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#5 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\phpws\numerology\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:10:31 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "lopen".' in E:\phpws\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\phpws\numerology\protected\controllers\CommsController.php(30): CComponent->__call('lopen', Array)
+#1 E:\phpws\numerology\protected\controllers\CommsController.php(30): CWebApplication->lopen()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(354): require('E:\phpws\numero...')
+#3 E:\phpws\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('Comms/appOpen')
+#4 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#5 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\phpws\numerology\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:11:27 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "lopen".' in E:\phpws\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\phpws\numerology\protected\controllers\CommsController.php(30): CComponent->__call('lopen', Array)
+#1 E:\phpws\numerology\protected\controllers\CommsController.php(30): CWebApplication->lopen()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(354): require('E:\phpws\numero...')
+#3 E:\phpws\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('Comms/appOpen')
+#4 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#5 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\phpws\numerology\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/appOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:12:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/index".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/index')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/index
+---
+2014/10/22 23:12:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/index".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/index')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/index
+---
+2014/10/22 23:13:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/appOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:13:22 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "lopen".' in E:\phpws\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\phpws\numerology\protected\controllers\CommsController.php(30): CComponent->__call('lopen', Array)
+#1 E:\phpws\numerology\protected\controllers\CommsController.php(30): CWebApplication->lopen()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(354): require('E:\phpws\numero...')
+#3 E:\phpws\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('Comms/appOpen')
+#4 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#5 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\phpws\numerology\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:15:02 [error] [php] Missing argument 1 for CController::__construct(), called in E:\phpws\numerology\protected\controllers\CommsController.php on line 30 and defined (E:\phpws\yii\framework\web\CController.php:110)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+in E:\phpws\numerology\protected\controllers\CommsController.php (30)
+in E:\phpws\numerology\index.php (13)
+2014/10/22 23:15:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/appOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:17:30 [error] [php] include(Controller.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (E:\phpws\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 E:\phpws\numerology\protected\controllers\SiteController.php(4): spl_autoload_call()
+#1 E:\phpws\yii\framework\web\CWebApplication.php(354): require()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+in E:\phpws\numerology\protected\controllers\SiteController.php (4)
+in E:\phpws\numerology\index.php (13)
+2014/10/22 23:19:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/appOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/appOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:20:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/AppOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---
+2014/10/22 23:20:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/AppOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/AppOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/AppOpen
+---
+2014/10/22 23:21:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/AppOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/AppOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/AppOpen
+---
+2014/10/22 23:22:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/AppOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/AppOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/AppOpen
+---
+2014/10/22 23:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/index".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/index')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/index
+---
+2014/10/22 23:23:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:26:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:26:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:26:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:26:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:28:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:28:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:28:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:28:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:29:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:29:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:30:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:30:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:30:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/AppOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---
+2014/10/22 23:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/AppOpen".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---
+2014/10/22 23:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/AppOpen
+---
+2014/10/22 23:39:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Reg".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('Reg')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('Reg')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Reg')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/Reg
+---
+2014/10/22 23:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Reg".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('Reg')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('Reg')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Reg')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/Reg
+---
+2014/10/22 23:39:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Reg".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('Reg')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('Reg')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Reg')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/Reg
+---
+2014/10/22 23:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Reg?AppID=0".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('Reg?AppID=0')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('Reg?AppID=0')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Reg?AppID=...')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Site/Reg?AppID=0
+---
+2014/10/22 23:41:41 [error] [php] Use of undefined constant AppID - assumed 'AppID' (E:\phpws\numerology\protected\controllers\SiteController.php:27)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php?r=Site/Reg/AppID=0
+in E:\phpws\numerology\protected\controllers\SiteController.php (27)
+in E:\phpws\numerology\index.php (13)
+2014/10/22 23:41:51 [error] [php] Use of undefined constant AppID - assumed 'AppID' (E:\phpws\numerology\protected\controllers\SiteController.php:28)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php?r=Site/Reg/AppID=0
+in E:\phpws\numerology\protected\controllers\SiteController.php (28)
+in E:\phpws\numerology\index.php (13)
+2014/10/22 23:41:51 [error] [php] Use of undefined constant AppID - assumed 'AppID' (E:\phpws\numerology\protected\controllers\SiteController.php:28)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php?r=Site/Reg/AppID=0
+in E:\phpws\numerology\protected\controllers\SiteController.php (28)
+in E:\phpws\numerology\index.php (13)
+2014/10/22 23:41:51 [error] [php] Use of undefined constant AppID - assumed 'AppID' (E:\phpws\numerology\protected\controllers\SiteController.php:28)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php?r=Site/Reg/AppID=0
+in E:\phpws\numerology\protected\controllers\SiteController.php (28)
+in E:\phpws\numerology\index.php (13)
+2014/10/22 23:41:52 [error] [php] Use of undefined constant AppID - assumed 'AppID' (E:\phpws\numerology\protected\controllers\SiteController.php:28)
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 E:\phpws\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 E:\phpws\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpws\numerology\index.php(13): CWebApplication->run()
+REQUEST_URI=/numerology/index.php?r=Site/Reg/AppID=0
+in E:\phpws\numerology\protected\controllers\SiteController.php (28)
+in E:\phpws\numerology\index.php (13)
+2014/10/22 23:44:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/AppOpen/AppID=0".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen/A...')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen/AppID=0
+---
+2014/10/22 23:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/AppOpen/AppID=0".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen/A...')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen/AppID=0
+---
+2014/10/22 23:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/Reg/AppID=0".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/Reg/AppID...')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/Reg/AppID=0
+---
+2014/10/22 23:48:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Comms/index".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/index')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/index
+---
+2014/10/22 23:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/index".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/index')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/index
+---
+2014/10/22 23:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/GetRegister".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/GetRegister')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=Api/GetRegister
+---
+2014/10/22 23:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "appOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('appOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('appOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/appOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/appOpen
+---
+2014/10/22 23:50:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---
+2014/10/22 23:51:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---
+2014/10/22 23:51:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---
+2014/10/22 23:51:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---
+2014/10/22 23:51:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AppOpen".' in E:\phpws\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\phpws\yii\framework\web\CController.php(270): CController->missingAction('AppOpen')
+#1 E:\phpws\yii\framework\web\CWebApplication.php(282): CController->run('AppOpen')
+#2 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Comms/AppOpen')
+#3 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\phpws\numerology\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
+---

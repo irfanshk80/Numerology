@@ -1,0 +1,55 @@
+CREATE TABLE num_guru (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  guruName VARCHAR(20) NULL,
+  guruPhoto VARCHAR(20) NULL,
+  guruDescription TEXT NULL,
+  guruCity VARCHAR(20) NULL,
+  guruCountry VARCHAR(20) NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE num_user (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  personName VARCHAR(20) NULL,
+  dob DATE NULL,
+  emailAdd VARCHAR(30) NULL,
+  phone VARCHAR(20) NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE num_dailytext (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  displayText VARCHAR(20) NULL,
+  displayImage VARCHAR(50) NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE num_appinfo (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  AppID INTEGER UNSIGNED NULL,
+  AppVersion VARCHAR(20) NULL,
+  ScreenWidth INTEGER UNSIGNED NULL,
+  ScreenHeight INTEGER UNSIGNED NULL,
+  AppOS VARCHAR(20) NULL,
+  AppStatus CHAR(1) NULL,
+  PRIMARY KEY(id),
+  INDEX num_appinfo_FKIndex1(id),
+  FOREIGN KEY(id)
+    REFERENCES num_user(id)
+      ON DELETE NO ACTION
+      ON UPDATE NO ACTION
+);
+
+CREATE TABLE num_purchaseinfo (
+  id INTEGER UNSIGNED NOT NULL,
+  purchaseRef INTEGER UNSIGNED NULL,
+  osPurchase VARCHAR(20) NULL,
+  PRIMARY KEY(id),
+  INDEX num_purchaseinfo_FKIndex1(id),
+  FOREIGN KEY(id)
+    REFERENCES num_user(id)
+      ON DELETE NO ACTION
+      ON UPDATE NO ACTION
+);
+
+

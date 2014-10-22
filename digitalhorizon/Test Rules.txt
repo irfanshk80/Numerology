@@ -1,0 +1,6 @@
+1. The assessment will be on code clarity, comments, cleanliness, modularity and functionality. Readability and flexibility.
+
+2. If  the code does not work, it will result in failure. 
+
+3. Note: The API has deliberate bugs. You are to document (through comments) in your code, and in a README file what you think the bugs are, and what workarounds you haveapplied to allow the software to run.
+
