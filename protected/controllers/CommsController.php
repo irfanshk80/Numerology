@@ -16,7 +16,17 @@ class CommsController extends Controller
 		$AppOS = isset($_REQUEST['AppOS']) ? $_REQUEST['AppOS'] : '';
 		
 		if($AppID == 0) {
+			$modelApp = new Appinfo();
+			$modelApp->AppStatus = 1;
+			$modelApp->attributes = $_REQUEST;
 			
+			if($modelApp->save()) {
+				$res['status'] = "OK";
+				$res['AppID'] = $modelApp->AppID;
+			} else {
+				$res['status'] = "FAIL";
+				$res['retID'] = "431";
+			}
 		}
 		header("Content-type: application/json");
 		echo json_encode($res);

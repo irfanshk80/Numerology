@@ -828,3 +828,17 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/numerology/index.php?r=Comms/AppOpen
 ---
+2014/10/23 09:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/model/index".' in E:\phpws\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\phpws\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#1 E:\phpws\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\phpws\numerology\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/numerology/index.php?r=gii/model/index
+---
+2014/10/23 09:11:54 [warning] [application] Failed to set unsafe attribute "r" of "Appinfo".
+in E:\phpws\numerology\protected\controllers\CommsController.php (21)
+in E:\phpws\numerology\index.php (13)
+2014/10/23 09:15:19 [warning] [application] Failed to set unsafe attribute "r" of "Appinfo".
+in E:\phpws\numerology\protected\controllers\CommsController.php (21)
+in E:\phpws\numerology\index.php (13)

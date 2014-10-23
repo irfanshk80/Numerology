@@ -11,7 +11,6 @@
  * @property string $phone
  *
  * The followings are the available model relations:
- * @property NumAppinfo $numAppinfo
  * @property NumPurchaseinfo $numPurchaseinfo
  */
 class User extends CActiveRecord
@@ -49,7 +48,6 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'numAppinfo' => array(self::HAS_ONE, 'NumAppinfo', 'id'),
 			'numPurchaseinfo' => array(self::HAS_ONE, 'NumPurchaseinfo', 'id'),
 		);
 	}
