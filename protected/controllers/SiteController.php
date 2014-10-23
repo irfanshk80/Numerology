@@ -58,8 +58,14 @@ class SiteController extends Controller
 		{
 			if(Yii::app()->request->isAjaxRequest)
 				echo $error['message'];
-			else
-				$this->render('error', $error);
+			else {
+				//$this->render('../error', $error);
+				$res['status'] = 'Fail';
+				$res['feedback'] = 'Request not recognised';
+				header("Content-type: application/json");
+				echo json_encode($res);
+			}
+
 		}
 	}
 

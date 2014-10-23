@@ -106,6 +106,126 @@ class CommsController extends Controller
 		header("Content-type: application/json");
 		echo json_encode($res);
 	}
+
+	public function actionGetGurus() {
+		$res = array();
+		
+		$AppID = isset($_REQUEST['AppID']) ? $_REQUEST['AppID'] : '';
+				
+		//Fetching All Gurus
+		if(!empty($AppID)) {
+			$modelGuru = Guru::model()->findAll();
+			$arr_guru = array();
+
+			if(isset($modelGuru)) {
+				$res['status'] = "OK";
+				for($i=0;$i<count($modelGuru);$i++) {
+					foreach ($modelGuru[$i] as $key => $value) {
+						$arr_guru[$key] = $value;
+					}
+				$res["guruList"][] = $arr_guru;
+				}
+			}
+			else {
+				//Display not found Fail status
+				$res['status'] = "FAIL";
+				$res['feedback'] = "No Gurus Found";
+			}
+		} else {
+			//AppID not Found
+			$res['status'] = "FAIL";
+			$res['feedback'] = "AppID Not Found";
+		}
+		header("Content-type: application/json");
+		echo json_encode($res);
+	}
+
+	public function actionPurchaseCompleted() {
+		$res = array();
+		
+		$AppID = isset($_REQUEST['AppID']) ? $_REQUEST['AppID'] : '';
+		$personName = isset($_REQUEST['personName']) ? $_REQUEST['personName'] : '';
+		$personDay = isset($_REQUEST['personDay']) ? $_REQUEST['personDay'] : '';
+		$personMonth = isset($_REQUEST['personMonth']) ? $_REQUEST['personMonth'] : '';
+		$personYear = isset($_REQUEST['personYear']) ? $_REQUEST['personYear'] : '';
+
+		$purchaseRef = isset($_REQUEST['purchaseRef']) ? $_REQUEST['purchaseRef'] : '';
+		$emailAdd = isset($_REQUEST['emailAdd']) ? $_REQUEST['emailAdd'] : '';
+		$guruID = isset($_REQUEST['guruID']) ? $_REQUEST['guruID'] : '';
+		$osPurchase = isset($_REQUEST['osPurchase']) ? $_REQUEST['osPurchase'] : '';
+		
+		//Fetching purchaseinfo records with these parameters
+		if(!empty($AppID) && !empty($personName) && !empty($personDay) && !empty($personMonth) && !empty($personYear) && !empty($purchaseRef) && !empty($emailAdd) && !empty($guruID) && !empty($osPurchase)) {
+			//Checking if AppID is correct
+			$modelApp = Appinfo::model()->findByAttributes(array("AppID" => $AppID));
+			if(isset($modelApp)) {
+				//Fetching User record
+				$modelUser = User::model()->findByAttributes(array("personName"=>$personName, "personDay" => $personDay, "personMonth" => $personMonth, "personYear" => $personYear, "emailAdd" => $emailAdd));
+				if(isset($modelUser)) {
+					$modelPurchase = purchaseinfo::model()->findByAttributes(array("purchaseRef" => $purchaseRef, "osPurchase" => $osPurchase));
+					if(isset($modelPurchase)) {
+						$res['status'] = "OK";
+					} else { $res['status'] = "FAIL"; $res['debug'] = 'Purchase Ref not found'; }
+				} else { $res['status'] = "FAIL"; $res['debug'] = 'User Record not found'; }
+			} else { $res['status'] = "FAIL"; $res['debug'] = 'AppID not found'; }
+
+		} else {
+			//Fetch the info using AppID from the model
+			$res['status'] = "FAIL";
+		}
+		header("Content-type: application/json");
+		echo json_encode($res);
+	}
+
+	public function actionEmailReport() {
+		$res = array();
+		
+		$AppID = isset($_REQUEST['AppID']) ? $_REQUEST['AppID'] : '';
+		$personName = isset($_REQUEST['personName']) ? $_REQUEST['personName'] : '';
+		$personDay = isset($_REQUEST['personDay']) ? $_REQUEST['personDay'] : '';
+		$personMonth = isset($_REQUEST['personMonth']) ? $_REQUEST['personMonth'] : '';
+		$personYear = isset($_REQUEST['personYear']) ? $_REQUEST['personYear'] : '';
+
+		$emailAdd = isset($_REQUEST['emailAdd']) ? $_REQUEST['emailAdd'] : '';
+				
+		//Fetching purchaseinfo records with these parameters
+		if(!empty($AppID) && !empty($personName) && !empty($personDay) && !empty($personMonth) && !empty($personYear) && !empty($emailAdd)) {
+			//Checking if AppID is correct
+			$modelApp = Appinfo::model()->findByAttributes(array("AppID" => $AppID));
+			if(isset($modelApp)) {
+				//Fetching User record
+				$modelUser = User::model()->findByAttributes(array("personName"=>$personName, "personDay" => $personDay, "personMonth" => $personMonth, "personYear" => $personYear));
+				if(isset($modelUser)) {
+					if($this->sendMail($modelUser)) {
+						$res['status'] = "OK";
+						$res['Email'] = "Sent";
+					}
+				} else { $res['status'] = "FAIL"; $res['debug'] = 'User Record not found'; }
+			} else { $res['status'] = "FAIL"; $res['debug'] = 'AppID not found'; }
+
+		} else {
+			//Fetch the info using AppID from the model
+			$res['status'] = "FAIL";
+			$res['feedbackText'] = 'Invalid Text';
+		}
+		header("Content-type: application/json");
+		echo json_encode($res);
+	}
+
+	public function sendMail($modelUser) {
+		$to = $modelUser->emailAdd;
+   		$subject = "Report";
+   		$message = $modelUser['personName'];
+   		$header = "From:num@numerology.com \r\n";
+		//$retval = mail ($to,$subject,$message,$header);
+		$retval = true;
+
+   		if( $retval == true ) {
+      		return 1;
+   		} else {
+      		return 0;
+   		}
+	}
 }
 
 ?>
