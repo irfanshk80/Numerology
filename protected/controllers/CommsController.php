@@ -18,7 +18,7 @@ class CommsController extends Controller
 		//Adding up new AppID if AppID is empty or 0
 		if($AppID == 0 || empty($AppID)) {
 			$modelApp = new Appinfo();
-			$modelApp->AppStatus = 1;
+			$modelApp->AppExitStatus = 1;
 			$modelApp->attributes = $_REQUEST;
 			$modelApp->unsetAttributes(array('AppID'));
 			
@@ -155,24 +155,26 @@ class CommsController extends Controller
 		$osPurchase = isset($_REQUEST['osPurchase']) ? $_REQUEST['osPurchase'] : '';
 		
 		//Fetching purchaseinfo records with these parameters
-		if(!empty($AppID) && !empty($personName) && !empty($personDay) && !empty($personMonth) && !empty($personYear) && !empty($purchaseRef) && !empty($emailAdd) && !empty($guruID) && !empty($osPurchase)) {
-			//Checking if AppID is correct
-			$modelApp = Appinfo::model()->findByAttributes(array("AppID" => $AppID));
+		$modelApp = Appinfo::model()->findByAttributes(array("AppID" => $AppID));
 			if(isset($modelApp)) {
 				//Fetching User record
 				$modelUser = User::model()->findByAttributes(array("personName"=>$personName, "personDay" => $personDay, "personMonth" => $personMonth, "personYear" => $personYear, "emailAdd" => $emailAdd));
 				if(isset($modelUser)) {
-					$modelPurchase = purchaseinfo::model()->findByAttributes(array("purchaseRef" => $purchaseRef, "osPurchase" => $osPurchase));
-					if(isset($modelPurchase)) {
-						$res['status'] = "OK";
+					$modelPurchase = new Purchaseinfo();
+					//updating userId in the purchase table to know whom has purchased
+					$modelPurchase->userId = $modelUser->id;
+					$modelPurchase->purchaseRef = $purchaseRef;
+					$modelPurchase->osPurchase = $osPurchase;
+					$modelPurchase->guruID = $guruID;
+					if(!empty($purchaseRef) && !empty($osPurchase) && !empty($guruID)) {
+						$modelPurchase->validate();
+						$errors = $modelPurchase->getErrors();
+						if($modelPurchase->save()) { 
+						$res['status'] = "OK"; } else print_r($errors);
 					} else { $res['status'] = "FAIL"; $res['debug'] = 'Purchase Ref not found'; }
 				} else { $res['status'] = "FAIL"; $res['debug'] = 'User Record not found'; }
 			} else { $res['status'] = "FAIL"; $res['debug'] = 'AppID not found'; }
 
-		} else {
-			//Fetch the info using AppID from the model
-			$res['status'] = "FAIL";
-		}
 		header("Content-type: application/json");
 		echo json_encode($res);
 	}
@@ -225,6 +227,50 @@ class CommsController extends Controller
    		} else {
       		return 0;
    		}
+	}
+	
+	public function actionGetDailyText() {
+		$res = array();
+		
+		$AppID = isset($_REQUEST['AppID']) ? $_REQUEST['AppID'] : '';
+		
+		$modelDText = Dailytext::model()->findByPk("4");
+		$res['status'] = "OK";
+		$res['displayText'] = isset($modelDText['displayText']) ? $modelDText['displayText'] : "Sample Display Text";
+		$res['displayImage'] = $modelDText['displayImage'] ? $modelDText['displayImage'] : "Image";
+		
+		header("Content-type: application/json");
+		echo json_encode($res);
+	}
+	
+	public function actionUserExit() {
+		$res = array();
+	
+		$AppID = isset($_REQUEST['AppID']) ? $_REQUEST['AppID'] : '';
+		
+		if(isset($AppID)) {
+			$modelAppinfo = Appinfo::model()->findByAttributes(array("AppID" => $AppID));
+			if(isset($modelAppinfo)) {
+				//Update the AppExitStatus to zero from one
+				$modelAppinfo->AppExitStatus = 0;
+				$modelAppinfo->update();
+				$res['status'] = "OK";
+			} else {
+				$res['status'] = "OK";
+				$res['debug'] = "AppID not Found";
+			}
+		}
+
+		header("Content-type: application/json");
+		echo json_encode($res);
+	}
+	
+	public function actionGetProfile() {
+		$GuruID = isset($_REQUEST['GuruID']) ? $_REQUEST['GuruID'] : '';
+		
+		$model = Guru::model()->findByPk($GuruID);
+		
+		$this->render('guruprofile', array("model" => $model));
 	}
 }
 

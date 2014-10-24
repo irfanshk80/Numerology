@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.56, for Win32 (ia32)
 --
 -- Host: localhost    Database: numerology
 -- ------------------------------------------------------
--- Server version	5.6.17
+-- Server version	5.1.56-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,9 +28,9 @@ CREATE TABLE `num_appinfo` (
   `ScreenWidth` int(10) unsigned DEFAULT NULL,
   `ScreenHeight` int(10) unsigned DEFAULT NULL,
   `AppOS` varchar(20) DEFAULT NULL,
-  `AppStatus` char(1) DEFAULT NULL,
+  `AppExitStatus` char(1) DEFAULT NULL,
   PRIMARY KEY (`AppID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `num_appinfo` (
 
 LOCK TABLES `num_appinfo` WRITE;
 /*!40000 ALTER TABLE `num_appinfo` DISABLE KEYS */;
-INSERT INTO `num_appinfo` VALUES (1,NULL,NULL,NULL,NULL,'1'),(2,NULL,NULL,NULL,NULL,'1'),(3,NULL,NULL,NULL,NULL,'1'),(4,NULL,NULL,NULL,NULL,'1'),(5,NULL,NULL,NULL,NULL,'1'),(6,NULL,NULL,NULL,NULL,'1');
+INSERT INTO `num_appinfo` VALUES (1,NULL,NULL,NULL,NULL,'0'),(2,NULL,NULL,NULL,NULL,'1'),(3,NULL,NULL,NULL,NULL,'1'),(4,NULL,NULL,NULL,NULL,'0'),(5,NULL,NULL,NULL,NULL,'1'),(6,NULL,NULL,NULL,NULL,'1'),(7,NULL,NULL,NULL,NULL,'1');
 /*!40000 ALTER TABLE `num_appinfo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +64,7 @@ CREATE TABLE `num_dailytext` (
 
 LOCK TABLES `num_dailytext` WRITE;
 /*!40000 ALTER TABLE `num_dailytext` DISABLE KEYS */;
-INSERT INTO `num_dailytext` VALUES (4,'Future growth','/var/www/html/num/images/img111.jpeg');
+INSERT INTO `num_dailytext` VALUES (4,'<p>Random Text</p>','http://kamkash.com/images/image009.png');
 /*!40000 ALTER TABLE `num_dailytext` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -92,7 +92,7 @@ CREATE TABLE `num_guru` (
 
 LOCK TABLES `num_guru` WRITE;
 /*!40000 ALTER TABLE `num_guru` DISABLE KEYS */;
-INSERT INTO `num_guru` VALUES (1,'Guru1','/var/www/html/num/gu','Desc1','Birmingham','UK'),(2,'Guru2','/var/www/html/num/gu','Desc2','Bangalore','India');
+INSERT INTO `num_guru` VALUES (1,'Guru1','guru1.png','Desc1','Birmingham','UK'),(2,'Guru2','guru2.png','Desc2','Bangalore','India');
 /*!40000 ALTER TABLE `num_guru` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -104,13 +104,16 @@ DROP TABLE IF EXISTS `num_purchaseinfo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `num_purchaseinfo` (
-  `id` int(10) unsigned NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `userId` int(10) unsigned DEFAULT NULL,
   `purchaseRef` int(10) unsigned DEFAULT NULL,
   `osPurchase` varchar(20) DEFAULT NULL,
+  `guruID` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `num_purchaseinfo_FKIndex1` (`id`),
-  CONSTRAINT `num_purchaseinfo_ibfk_1` FOREIGN KEY (`id`) REFERENCES `num_user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `num_purchaseinfo_ibfk_1` (`userId`),
+  CONSTRAINT `num_purchaseinfo_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `num_user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +122,7 @@ CREATE TABLE `num_purchaseinfo` (
 
 LOCK TABLES `num_purchaseinfo` WRITE;
 /*!40000 ALTER TABLE `num_purchaseinfo` DISABLE KEYS */;
-INSERT INTO `num_purchaseinfo` VALUES (1,12345,'android');
+INSERT INTO `num_purchaseinfo` VALUES (1,1,34556,'ios',1);
 /*!40000 ALTER TABLE `num_purchaseinfo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -161,4 +164,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-23 18:39:03
+-- Dump completed on 2014-10-24  9:54:10

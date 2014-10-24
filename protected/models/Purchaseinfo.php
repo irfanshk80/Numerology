@@ -29,7 +29,7 @@ class Purchaseinfo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id', 'required'),
+			//array('id', 'required'),
 			array('id, purchaseRef', 'length', 'max'=>10),
 			array('osPurchase', 'length', 'max'=>20),
 			// The following rule is used by search().

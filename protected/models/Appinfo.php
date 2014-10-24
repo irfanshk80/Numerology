@@ -4,16 +4,12 @@
  * This is the model class for table "num_appinfo".
  *
  * The followings are the available columns in table 'num_appinfo':
- * @property string $id
  * @property string $AppID
  * @property string $AppVersion
  * @property string $ScreenWidth
  * @property string $ScreenHeight
  * @property string $AppOS
- * @property string $AppStatus
- *
- * The followings are the available model relations:
- * @property NumUser $id0
+ * @property string $AppExitStatus
  */
 class Appinfo extends CActiveRecord
 {
@@ -33,12 +29,12 @@ class Appinfo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('AppID, ScreenWidth, ScreenHeight', 'length', 'max'=>10),
 			array('AppVersion, AppOS', 'length', 'max'=>20),
-			array('AppStatus', 'length', 'max'=>1),
+			array('ScreenWidth, ScreenHeight', 'length', 'max'=>10),
+			array('AppExitStatus', 'length', 'max'=>1),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, AppID, AppVersion, ScreenWidth, ScreenHeight, AppOS, AppStatus', 'safe', 'on'=>'search'),
+			array('AppID, AppVersion, ScreenWidth, ScreenHeight, AppOS, AppExitStatus', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,7 +46,6 @@ class Appinfo extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'id0' => array(self::BELONGS_TO, 'NumUser', 'id'),
 		);
 	}
 
@@ -60,13 +55,12 @@ class Appinfo extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
 			'AppID' => 'App',
 			'AppVersion' => 'App Version',
 			'ScreenWidth' => 'Screen Width',
 			'ScreenHeight' => 'Screen Height',
 			'AppOS' => 'App Os',
-			'AppStatus' => 'App Status',
+			'AppExitStatus' => 'App Exit Status',
 		);
 	}
 
@@ -88,13 +82,12 @@ class Appinfo extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
 		$criteria->compare('AppID',$this->AppID,true);
 		$criteria->compare('AppVersion',$this->AppVersion,true);
 		$criteria->compare('ScreenWidth',$this->ScreenWidth,true);
 		$criteria->compare('ScreenHeight',$this->ScreenHeight,true);
 		$criteria->compare('AppOS',$this->AppOS,true);
-		$criteria->compare('AppStatus',$this->AppStatus,true);
+		$criteria->compare('AppExitStatus',$this->AppExitStatus,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
