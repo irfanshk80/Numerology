@@ -56,7 +56,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=numerology',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'irfan123',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		

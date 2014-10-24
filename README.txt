@@ -19,7 +19,7 @@ Now change directory with this command
 5. Initialize the git with this command
 >git init
 6. Add remote git connection with this command
->git remote add origin https://irfanshk80@bitbucket.org/irfanshk80/task.git
+>git remote add origin https://github.com/irfanshk80/Numerology.git
 7. Now pull the project
 >git pull origin master
 
@@ -30,7 +30,7 @@ Import Database:
 2. First Login and Create Database in mysql with this command
 >create database numerology;
 3. Import database with this command with task.sql provided by me is in D: drive
->mysql -u root -p task < D:\num.sql
+>mysql -u root -p numerology < D:\num.sql
 4. On prompting for the password enter the password.
 
 Change Config file:
